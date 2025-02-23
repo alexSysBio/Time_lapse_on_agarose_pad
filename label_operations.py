@@ -14,7 +14,7 @@ def get_cell_mask_files(cell_labels_path, file_suffix):
 
 def get_time_xy_channel_name(file_name, iteration_axis='xytc'):
    if iteration_axis == 'xytc':
-      pattern = r'(xy)(\d+)(t)(\d+)(c)(\d{1}+)'
+      pattern = r'(xy)(\d+)(t)(\d+)(c)(\d+)'
       match = re.findall(pattern, file_name)[0]
       # print(match)
       xyp = int(match[1])
